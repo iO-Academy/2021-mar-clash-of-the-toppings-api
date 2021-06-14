@@ -6,7 +6,9 @@ const ObjectId = require("mongodb").ObjectId;
 const getAllToppings = (req, res) => {
   DbService.connectToDb(async (db) => {
     const result = await ToppingsService.getAllToppings(db);
-    return res.json(result);
+    let jsonRes = ResponsesService.successful()
+    jsonRes.data = result;
+    return res.json(jsonRes);
   });
 };
 
