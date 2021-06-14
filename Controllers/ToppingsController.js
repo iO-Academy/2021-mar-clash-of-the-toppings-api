@@ -22,7 +22,6 @@ const updateTopping = (req, res) => {
 
   DbService.connectToDb(async (db) => {
     const result = await ToppingsService.updateTopping(db, data);
-    console.log(result.modifiedCount)
     if(result.modifiedCount == 1) {
       const result2 = await ToppingsService.getToppingById(db, data.id);
       let jsonRes = ResponsesService.successful();
