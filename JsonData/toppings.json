@@ -1,0 +1,231 @@
+[{
+  "_id": {
+    "$oid": "60c3bb647c9b5b8db78f6688"
+  },
+  "name": "Bacon",
+  "img": "https://dev.io-academy.uk/resources/pizza/images/bacon.jpg",
+  "category": "Meat",
+  "wins": 0,
+  "battles": 0,
+  "winPercent": 0
+},{
+  "_id": {
+    "$oid": "60c3bb647c9b5b8db78f6689"
+  },
+  "name": "Tomatoes",
+  "img": "https://dev.io-academy.uk/resources/pizza/images/tomato.jpg",
+  "category": "Veg",
+  "wins": 0,
+  "battles": 0,
+  "winPercent": 0
+},{
+  "_id": {
+    "$oid": "60c3bb647c9b5b8db78f668a"
+  },
+  "name": "Blue cheese",
+  "img": "https://dev.io-academy.uk/resources/pizza/images/blue-cheese.jpg",
+  "category": "Cheese",
+  "wins": 0,
+  "battles": 0,
+  "winPercent": 0
+},{
+  "_id": {
+    "$oid": "60c3bb647c9b5b8db78f668b"
+  },
+  "name": "Courgettes",
+  "img": "https://dev.io-academy.uk/resources/pizza/images/courgettes.jpg",
+  "category": "Veg",
+  "wins": 0,
+  "battles": 0,
+  "winPercent": 0
+},{
+  "_id": {
+    "$oid": "60c3bb647c9b5b8db78f668c"
+  },
+  "name": "Aubergine",
+  "img": "https://dev.io-academy.uk/resources/pizza/images/aubergine.jpg",
+  "category": "Veg",
+  "wins": 0,
+  "battles": 0,
+  "winPercent": 0
+},{
+  "_id": {
+    "$oid": "60c3bb647c9b5b8db78f668e"
+  },
+  "name": "Mozarella",
+  "img": "https://dev.io-academy.uk/resources/pizza/images/mozeralla.jpg",
+  "category": "Cheese",
+  "wins": 0,
+  "battles": 0,
+  "winPercent": 0
+},{
+  "_id": {
+    "$oid": "60c3bb647c9b5b8db78f668d"
+  },
+  "name": "Parmesan",
+  "img": "https://dev.io-academy.uk/resources/pizza/images/parmesan.jpeg",
+  "category": "Cheese",
+  "wins": 0,
+  "battles": 0,
+  "winPercent": 0
+},{
+  "_id": {
+    "$oid": "60c3bb647c9b5b8db78f6692"
+  },
+  "name": "Prosciutto",
+  "img": "https://dev.io-academy.uk/resources/pizza/images/prosciutto.jpg",
+  "category": "Meat",
+  "wins": 0,
+  "battles": 0,
+  "winPercent": 0
+},{
+  "_id": {
+    "$oid": "60c3bb647c9b5b8db78f6691"
+  },
+  "name": "Gherkins",
+  "img": "https://dev.io-academy.uk/resources/pizza/images/gherkins.jpg",
+  "category": "Veg",
+  "wins": 0,
+  "battles": 0,
+  "winPercent": 0
+},{
+  "_id": {
+    "$oid": "60c3bb647c9b5b8db78f6690"
+  },
+  "name": "Tandoori chicken",
+  "img": "https://dev.io-academy.uk/resources/pizza/images/tandoori-chicken.jpg",
+  "category": "Meat",
+  "wins": 0,
+  "battles": 0,
+  "winPercent": 0
+},{
+  "_id": {
+    "$oid": "60c3bb647c9b5b8db78f6694"
+  },
+  "name": "Olives",
+  "img": "https://dev.io-academy.uk/resources/pizza/images/olives.jpg",
+  "category": "Veg",
+  "wins": 0,
+  "battles": 0,
+  "winPercent": 0
+},{
+  "_id": {
+    "$oid": "60c3bb647c9b5b8db78f6693"
+  },
+  "name": "Plain chicken",
+  "img": "https://dev.io-academy.uk/resources/pizza/images/plain-chicken.jpg",
+  "category": "Meat",
+  "wins": 0,
+  "battles": 0,
+  "winPercent": 0
+},{
+  "_id": {
+    "$oid": "60c3bb647c9b5b8db78f668f"
+  },
+  "name": "Jalapeños",
+  "img": "https://dev.io-academy.uk/resources/pizza/images/jalapenos.jpg",
+  "category": "Veg",
+  "wins": 0,
+  "battles": 0,
+  "winPercent": 0
+},{
+  "_id": {
+    "$oid": "60c3bb647c9b5b8db78f6696"
+  },
+  "name": "Sweetcorn",
+  "img": "https://dev.io-academy.uk/resources/pizza/images/sweetcorn.jpg",
+  "category": "Veg",
+  "wins": 0,
+  "battles": 0,
+  "winPercent": 0
+},{
+  "_id": {
+    "$oid": "60c3bb647c9b5b8db78f6698"
+  },
+  "name": "Quorn chicken",
+  "img": "https://dev.io-academy.uk/resources/pizza/images/quorn-chicken.jpg",
+  "category": "Meat",
+  "wins": 0,
+  "battles": 0,
+  "winPercent": 0
+},{
+  "_id": {
+    "$oid": "60c3bb647c9b5b8db78f6697"
+  },
+  "name": "Spicy beef",
+  "img": "https://dev.io-academy.uk/resources/pizza/images/spicy-beef.jpg",
+  "category": "Meat",
+  "wins": 0,
+  "battles": 0,
+  "winPercent": 0
+},{
+  "_id": {
+    "$oid": "60c3bb647c9b5b8db78f6695"
+  },
+  "name": "Onion",
+  "img": "https://dev.io-academy.uk/resources/pizza/images/onions.jpg",
+  "category": "Veg",
+  "wins": 0,
+  "battles": 0,
+  "winPercent": 0
+},{
+  "_id": {
+    "$oid": "60c3bb647c9b5b8db78f669a"
+  },
+  "name": "Meatballs",
+  "img": "https://dev.io-academy.uk/resources/pizza/images/meatballs.jpg",
+  "category": "Meat",
+  "wins": 0,
+  "battles": 0,
+  "winPercent": 0
+},{
+  "_id": {
+    "$oid": "60c3bb647c9b5b8db78f6699"
+  },
+  "name": "Rocket",
+  "img": "https://dev.io-academy.uk/resources/pizza/images/rocket.jpg",
+  "category": "Veg",
+  "wins": 0,
+  "battles": 0,
+  "winPercent": 0
+},{
+  "_id": {
+    "$oid": "60c3bb647c9b5b8db78f669b"
+  },
+  "name": "Mushrooms",
+  "img": "https://dev.io-academy.uk/resources/pizza/images/mushrooms.jpg",
+  "category": "Veg",
+  "wins": 0,
+  "battles": 0,
+  "winPercent": 0
+},{
+  "_id": {
+    "$oid": "60c3bb647c9b5b8db78f669c"
+  },
+  "name": "Peppers",
+  "img": "https://dev.io-academy.uk/resources/pizza/images/peppers.jpg",
+  "category": "Veg",
+  "wins": 0,
+  "battles": 0,
+  "winPercent": 0
+},{
+  "_id": {
+    "$oid": "60c3bb647c9b5b8db78f669e"
+  },
+  "name": "Chorizo",
+  "img": "https://dev.io-academy.uk/resources/pizza/images/chorizo.jpg",
+  "category": "Meat",
+  "wins": 0,
+  "battles": 0,
+  "winPercent": 0
+},{
+  "_id": {
+    "$oid": "60c3bb647c9b5b8db78f669d"
+  },
+  "name": "Pulled pork",
+  "img": "https://dev.io-academy.uk/resources/pizza/images/pulled-pork.jpg",
+  "category": "Meat",
+  "wins": 0,
+  "battles": 0,
+  "winPercent": 0
+}]
