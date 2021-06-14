@@ -6,7 +6,7 @@ const ObjectId = require("mongodb").ObjectId;
 const getAllToppings = (req, res) => {
   DbService.connectToDb(async (db) => {
     const result = await ToppingsService.getAllToppings(db);
-    let jsonRes = ResponsesService.successful()
+    let jsonRes = ResponsesService.successful();
     jsonRes.data = result;
     return res.json(jsonRes);
   });
@@ -18,11 +18,11 @@ const updateTopping = (req, res) => {
     wins: req.body.wins,
     battles: req.body.battles,
   };
-  data.winPercent = Number((100*data.wins/data.battles).toFixed(1));
+  data.winPercent = Number(((100 * data.wins) / data.battles).toFixed(1));
 
   DbService.connectToDb(async (db) => {
     const result = await ToppingsService.updateTopping(db, data);
-    if(result.modifiedCount == 1) {
+    if (result.modifiedCount == 1) {
       const result2 = await ToppingsService.getToppingById(db, data.id);
       let jsonRes = ResponsesService.successful();
       jsonRes.data = result2;
@@ -31,8 +31,18 @@ const updateTopping = (req, res) => {
       let jsonRes = ResponsesService.unsuccessful();
       return res.json(jsonRes);
     }
-  })
-}
+  });
+};
+
+const getTopTen = (req, res) => {
+  DbService.connectToDb(async (db) => {
+    const result = await ToppingsService.getTopTen(db);
+    let jsonRes = ResponsesService.successful();
+    jsonRes.data = result;
+    return res.json(jsonRes);
+  });
+};
 
 module.exports.getAllToppings = getAllToppings;
 module.exports.updateTopping = updateTopping;
+module.exports.getTopTen = getTopTen;

@@ -1,9 +1,9 @@
 const ToppingsController = require("../Controllers/ToppingsController");
 
 const routes = (app) => {
-  app.get("/", ToppingsController.getAllToppings);
-  app.put("/", ToppingsController.updateTopping);
-  // app.get("/topten", ToppingsController.getTopTen);
+  app.get("/toppings", ToppingsController.getAllToppings);
+  app.put("/toppings", ToppingsController.updateTopping);
+  app.get("/toppings/topten", ToppingsController.getTopTen);
 };
 
 module.exports = routes;
