@@ -5,8 +5,8 @@ const ObjectId = require("mongodb").ObjectId;
 
 const getAllToppings = (req, res) => {
   DbService.connectToDb(async (db) => {
-    const toppings = await ToppingsService.getAllToppings(db);
-    res.json(toppings);
+    const result = await ToppingsService.getAllToppings(db);
+    return res.json(result);
   });
 };
 
@@ -15,12 +15,18 @@ const updateTopping = (req, res) => {
     id: ObjectId(req.body.id),
     wins: req.body.wins,
     battles: req.body.battles,
-  }
-  data.winPercent = Number((100*data.wins/data.battles).toFixed(1))
+  };
+  data.winPercent = Number((100*data.wins/data.battles).toFixed(1));
 
   DbService.connectToDb(async (db) => {
-    const mongoResponseObject = await ToppingsService.updateTopping(db, data)
-    res.json(mongoResponseObject)
+    const result = await ToppingsService.updateTopping(db, data);
+    console.log(result.modifiedCount)
+    if(result.modifiedCount == 1) {
+      const result2 = await ToppingsService.getToppingById(db, data.id);
+      let jsonRes = ResponsesService.successful();
+      jsonRes.data = result2;
+      return res.json(jsonRes);
+    }
   })
 }
 
