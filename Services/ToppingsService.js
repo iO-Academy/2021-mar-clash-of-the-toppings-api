@@ -1,6 +1,8 @@
-const getAllToppings = async (db) => {
+const getTwoToppings = async (db) => {
   const collection = db.collection("toppings");
-  const result = await collection.find({}).toArray();
+  const result = await collection
+    .aggregate([{ $sample: { size: 2 } }])
+    .toArray();
   return result;
 };
 
@@ -35,7 +37,7 @@ const getTopTen = async (db) => {
   return result;
 };
 
-module.exports.getAllToppings = getAllToppings;
+module.exports.getTwoToppings = getTwoToppings;
 module.exports.getToppingById = getToppingById;
 module.exports.updateTopping = updateTopping;
 module.exports.getTopTen = getTopTen;
