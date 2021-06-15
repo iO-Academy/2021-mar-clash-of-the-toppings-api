@@ -2,7 +2,7 @@ const ToppingsController = require("../Controllers/ToppingsController");
 const validator = require("../Middleware/updateToppingValidator");
 
 const routes = (app) => {
-  app.get("/toppings", ToppingsController.getAllToppings);
+  app.get("/toppings", ToppingsController.getTwoToppings);
   app.put(
     "/toppings",
     validator.updateToppingValidator,

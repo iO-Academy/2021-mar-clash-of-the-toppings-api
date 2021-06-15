@@ -3,9 +3,9 @@ const ToppingsService = require("../Services/ToppingsService");
 const ResponsesService = require("./../Services/ResponsesService");
 const ObjectId = require("mongodb").ObjectId;
 
-const getAllToppings = (req, res) => {
+const getTwoToppings = (req, res) => {
   DbService.connectToDb(async (db) => {
-    const result = await ToppingsService.getAllToppings(db);
+    const result = await ToppingsService.getTwoToppings(db);
     let jsonRes = ResponsesService.successful();
     if (result.length === 0) {
       jsonRes.msg = "No data found";
@@ -48,6 +48,6 @@ const getTopTen = (req, res) => {
   });
 };
 
-module.exports.getAllToppings = getAllToppings;
+module.exports.getTwoToppings = getTwoToppings;
 module.exports.updateTopping = updateTopping;
 module.exports.getTopTen = getTopTen;
