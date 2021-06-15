@@ -20,8 +20,8 @@ const updateTopping = (req, res) => {
     id: ObjectId(req.body.id),
     wins: req.body.wins,
     battles: req.body.battles,
+    winPercent: Number((100 * (req.body.wins / req.body.battles)).toFixed(1)),
   };
-  data.winPercent = Number(((100 * data.wins) / data.battles).toFixed(1));
 
   DbService.connectToDb(async (db) => {
     const updateResult = await ToppingsService.updateTopping(db, data);
