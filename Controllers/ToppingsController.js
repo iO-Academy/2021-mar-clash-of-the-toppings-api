@@ -27,10 +27,9 @@ const updateTopping = (req, res) => {
       let jsonRes = ResponsesService.successful();
       jsonRes.data = result2;
       return res.json(jsonRes);
-    } else {
-      let jsonRes = ResponsesService.unsuccessful();
-      return res.json(jsonRes);
     }
+    let jsonRes = ResponsesService.unsuccessful();
+    return res.json(jsonRes);
   });
 };
 
