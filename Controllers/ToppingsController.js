@@ -7,6 +7,9 @@ const getAllToppings = (req, res) => {
   DbService.connectToDb(async (db) => {
     const result = await ToppingsService.getAllToppings(db);
     let jsonRes = ResponsesService.successful();
+    if (result.length === 0) {
+      jsonRes.msg = "No data found";
+    }
     jsonRes.data = result;
     return res.json(jsonRes);
   });
@@ -21,11 +24,11 @@ const updateTopping = (req, res) => {
   data.winPercent = Number(((100 * data.wins) / data.battles).toFixed(1));
 
   DbService.connectToDb(async (db) => {
-    const result = await ToppingsService.updateTopping(db, data);
-    if (result.modifiedCount == 1) {
-      const result2 = await ToppingsService.getToppingById(db, data.id);
+    const updateResult = await ToppingsService.updateTopping(db, data);
+    if (updateResult.modifiedCount == 1) {
+      const findResult = await ToppingsService.getToppingById(db, data.id);
       let jsonRes = ResponsesService.successful();
-      jsonRes.data = result2;
+      jsonRes.data = findResult;
       return res.json(jsonRes);
     }
     let jsonRes = ResponsesService.unsuccessful();
