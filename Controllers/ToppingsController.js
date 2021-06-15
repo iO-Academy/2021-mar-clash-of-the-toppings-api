@@ -40,6 +40,9 @@ const getTopTen = (req, res) => {
   DbService.connectToDb(async (db) => {
     const result = await ToppingsService.getTopTen(db);
     let jsonRes = ResponsesService.successful();
+    if (result.length === 0) {
+      jsonRes.msg = "No data found";
+    }
     jsonRes.data = result;
     return res.json(jsonRes);
   });
