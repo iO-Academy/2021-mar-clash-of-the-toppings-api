@@ -1,6 +1,8 @@
 const getAllToppings = async (db) => {
   const collection = db.collection("toppings");
-  const result = await collection.find({}).toArray();
+  const result = await collection
+    .aggregate([{ $sample: { size: 2 } }])
+    .toArray();
   return result;
 };
 
