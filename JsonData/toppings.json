@@ -15,7 +15,7 @@
       "$oid": "60c3bb647c9b5b8db78f6689"
     },
     "name": "Tomatoes",
-    "img": "https://dev.io-academy.uk/resources/pizza/custom-images/tomato.png",
+    "img": "https://dev.io-academy.uk/resources/pizza/custom-images/tomatoes.png",
     "category": "Veg",
     "wins": 0,
     "battles": 0,
@@ -59,7 +59,7 @@
       "$oid": "60c3bb647c9b5b8db78f668e"
     },
     "name": "Mozarella",
-    "img": "https://dev.io-academy.uk/resources/pizza/custom-images/mozeralla.png",
+    "img": "https://dev.io-academy.uk/resources/pizza/custom-images/mozzarella.png",
     "category": "Cheese",
     "wins": 0,
     "battles": 0,
@@ -180,7 +180,7 @@
       "$oid": "60c3bb647c9b5b8db78f6695"
     },
     "name": "Onion",
-    "img": "https://dev.io-academy.uk/resources/pizza/custom-images/onions.png",
+    "img": "https://dev.io-academy.uk/resources/pizza/custom-images/onion.png",
     "category": "Veg",
     "wins": 0,
     "battles": 0,
