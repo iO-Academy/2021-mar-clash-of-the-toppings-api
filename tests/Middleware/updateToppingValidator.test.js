@@ -8,6 +8,6 @@ test("input with decimal", () => {
   expect(checkInt(34.24)).toBe(false);
 });
 
-test("input with decimal", () => {
+test("input with integer", () => {
   expect(checkInt(46)).toBe(true);
 });
