@@ -27,7 +27,7 @@ GET
         - {'data':[], 'msg':'No data found', statusCode:200, 'success':true}
 
 PUT
-- updates a topping with the new number of wins, new number of battles and calculates the new win percentage. Then 
+- Updates a topping with the new number of wins, new number of battles and calculates the new win percentage. Then 
   returns the updated topping.
 - Data format:
     - {'_id': ObjectId('507f1f77bcf86cd799439011'), 'name':'Coffee for Maria', 'img':'<your image url>',
@@ -40,3 +40,14 @@ PUT
     - if PUT request is unsuccessful
       - {'data':[], 'msg':'There has been an error', statusCode:404, 'success':false} 
 
+**/toppings/topten**
+GET
+- Gets the top ten toppings by win percentage in descending order.
+- Data format:
+    - {'_id': ObjectId('507f1f77bcf86cd799439011'), 'name':'Coffee for Maria', 'img':'<your image url>',
+      'category':'Chameleon', 'wins':49, 'battles':50, 'winPercent':98}
+- Returns:
+    - if GET request is successful
+        - {'data':[], 'msg':'Success', statusCode:200, 'success':true}
+    - if GET request is successful but no data is returned:
+        - {'data':[], 'msg':'No data found', statusCode:200, 'success':true}
