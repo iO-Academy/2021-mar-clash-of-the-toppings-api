@@ -19,3 +19,4 @@ const checkInt = (value) => {
 };
 
 module.exports.updateToppingValidator = updateToppingValidator;
+module.exports.checkInt = checkInt;
