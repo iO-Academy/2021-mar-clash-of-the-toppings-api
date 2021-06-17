@@ -14,5 +14,14 @@ const successful = () => {
     success: true,
   };
 };
+const invalidMethod = () => {
+  return {
+    data: [],
+    msg: "Invalid method!",
+    statuscode: 405,
+    success: false
+  };
+};
 module.exports.unsuccessful = unsuccessful;
 module.exports.successful = successful;
+module.exports.invalidMethod = invalidMethod;
