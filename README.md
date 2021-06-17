@@ -41,6 +41,7 @@ PUT
       - {'data':[], 'msg':'There has been an error', statusCode:404, 'success':false} 
 
 **/toppings/topten**
+
 GET
 - Gets the top ten toppings by win percentage in descending order.
 - Data format:
