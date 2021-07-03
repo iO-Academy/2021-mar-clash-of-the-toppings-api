@@ -3,15 +3,15 @@ const MongoClient = require("mongodb").MongoClient;
 const url = "mongodb://root:password@localhost:27017";
 const dbName = "pizza";
 
-const Client = new MongoClient(url, {
-  useNewUrlParser: true,
-  useUnifiedTopology: true,
-});
-
-const connectToDb = (cb) => {
-  Client.connect((err) => {
+const connectToDb = async (cb) => {
+  const Client = new MongoClient(url, {
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+  });
+  await Client.connect(async (err) => {
     let db = Client.db(dbName);
-    cb(db);
+    await cb(db);
+    await Client.close()
   });
 };
 
